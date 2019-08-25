@@ -2,3 +2,23 @@ body{
     background-image: url(../images/keith-misner-h0Vxgz5tyXA-unsplash.jpg);
     color: #fff;
 }
+
+.score{
+ background-color:  darkgreen;
+ width: 50px;
+
+}
+
+h1{
+    background-color: orangered;
+    width: 200px;
+}
+
+.partext{
+    background-color: brown;
+    width: 300px;
+}
+
+#scoreKeeper{
+    background-color: orangered;
+}
