@@ -13,9 +13,7 @@ $(document).ready(function () {
     var crystalNumber;
     wins = 0;
     Lose = 0;
-    var wincounter = 0;
-    var losscounter;
-    var counter=0;
+    var counter = 0;
 
 
     //  Computer number random every time the game loads
@@ -24,94 +22,46 @@ $(document).ready(function () {
     $("#number-to-guess").text(targetNumber);
 
 
-    //  On Click Events
-    
+
+// A loop that randomizes an array.
 
     for (var i = 0; i < numberOptions.length; i++) {
-    var random = Math.floor(Math.random() * 12) + 1;
+        var random = Math.floor(Math.random() * 12) + 1;
 
-     imageCrystal = numberOptions.length;
+        imageCrystal = numberOptions.length;
 
-    
 
-   
+
+
     }
 
+// A on click event that adds values together.
 
     $(".number").on("click", function () {
 
         // prints the array randomly on the crystal in taget score
-          $("#crystalNumber").text(imageCrystal);
+        $("#crystalNumber").text(imageCrystal);
 
         //   Adds the value of the crytals to the traget number
-       counter += imageCrystal;
-       
-    
-       //    Prints to the screen
-       $("#crystalNumber").text(counter);
-       
-       
-       if(counter === targetNumber){
-       
-           alert("you win");
-        console.log(counter)
+        counter += imageCrystal;
+
+
+        //    Prints to the screen
+        $("#crystalNumber").text(counter);
+
+
+        // A condition that alerts when you win by being equal to target number.
+        if (counter === targetNumber) {
+
+            alert("you win");
+            console.log(counter)
         }
+        // A condition that alerts when you lose by going over target number.
         else if (counter >= targetNumber) {
             alert("You lose!!");
-          }
+        }
 
-        })
-
-
-
-
-
-
-
-    // $("#random-button2").on("click", function () {
-    // ... we generate a random number
-    // var random = Math.floor(Math.random() * 12) + 1;
-    // ... and then dump the random number into our random-number div.
-    // $("#random-number").text(random);
-    // });
-
-
-
-
-    // $("#random-button3").on("click", function () {
-    // ... we generate a random number
-    // var random = Math.floor(Math.random() * 12) + 1;
-    // ... and then dump the random number into our random-number div.
-    // $("#random-number").text(random);
-    // })
-
-
-    // $("#random-button4").on("click", function () {
-    // ... we generate a random number
-    // var random = Math.floor(Math.random() * 12) + 1;
-    // ... and then dump the random number into our random-number div.
-    // $("#random-number").text(random);
-    // });
-
-
-    //    if ("#random-number"=== computerNumber){
-    //    console.log("#random-number")
-    //    wins ++;
-
-    //    }
-
-
-
-
-
-
-
-
-
-
-
-
-
+    })
 
 
 
