@@ -1,87 +1,105 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
-
 
     // Create Golbal variables
 
-    var computerNumber = 0;
-    var crystalNumber = "";
-    var isCalculated = false;
-    isOperatorChosen = false;
-    var operator = "";
 
+
+
+
+    var numberOptions = [10, 5, 3, 7];
+    var imageCrystal
+    var crystalNumber;
     Wins = 0;
     Lose = 0;
-
-    //   Clear Function
-    function initializeCalculator() {
-        computertNumber = "";
-        crystalNumber = "";
-        isCalculated = false;
-        isOperatorChosen = false;
-        var operator = "";
-        Wins = 0;
-        Lose = 0;
+    var wincounter = 0;
+    var losscounter;
+    var counter=0;
 
 
-        $("#computerNumber, #crystalNumber,  #result").empty();
+    //  Computer number random every time the game loads
+
+    var targetNumber = Math.floor(Math.random() * 12) + 1;;
+    $("#number-to-guess").text(targetNumber);
+
+
+    //  On Click Events
+    var numberOptions = [10, 5, 3, 7];
+
+    for (var i = 0; i < numberOptions.length; i++) {
+    var random = Math.floor(Math.random() * 12) + 1;
+
+     imageCrystal = numberOptions[i];
+
+    
+
+   
     }
-    var targetNumber = Math.floor(Math.random() * 120) + 19; ;
-
-  $("#number-to-guess").text(targetNumber);
-             //  On Click Events
-    $("#random-button").on("click", function () {
 
 
+    $(".number").on("click", function () {
         // ... we generate a random number
-        var random = Math.floor(Math.random() * 12) + 1;
 
         // ... and then dump the random number into our random-number div.
-        $("#random-number").text(random);
 
+          $("#crystalNumber").text(imageCrystal);
 
-    })
-    $("#random-button2").on("click", function () {
-
-
-        // ... we generate a random number
-        var random = Math.floor(Math.random() * 12) + 1;
-
-        // ... and then dump the random number into our random-number div.
-        $("#random-number").text(random);
-
-
-    })
-    $("#random-button3").on("click", function () {
+       counter += imageCrystal;
+       console.log(counter)
+       
+        //  var crystalValue = ($(this).attr("data-crystalvalue"));
+        //  crystalValue = parseInt(crystalValue);
         
+        })
 
-        // ... we generate a random number
-        var random = Math.floor(Math.random() * 12) + 1;
 
-        // ... and then dump the random number into our random-number div.
-        $("#random-number").text(random);
 
-    })
-    $("#random-button4").on("click", function () {
-        
+    // $("#random-button2").on("click", function () {
+    // ... we generate a random number
+    // var random = Math.floor(Math.random() * 12) + 1;
+    // ... and then dump the random number into our random-number div.
+    // $("#random-number").text(random);
+    // });
 
-        // ... we generate a random number
-        var random = Math.floor(Math.random() * 12) + 1;
 
-        // ... and then dump the random number into our random-number div.
-        $("#random-number").text(random);
 
-    })
+
+    // $("#random-button3").on("click", function () {
+    // ... we generate a random number
+    // var random = Math.floor(Math.random() * 12) + 1;
+    // ... and then dump the random number into our random-number div.
+    // $("#random-number").text(random);
+    // })
+
+
+    // $("#random-button4").on("click", function () {
+    // ... we generate a random number
+    // var random = Math.floor(Math.random() * 12) + 1;
+    // ... and then dump the random number into our random-number div.
+    // $("#random-number").text(random);
+    // });
+
+
+    //    if ("#random-number"=== computerNumber){
+    //    console.log("#random-number")
+    //    wins ++;
+
+    //    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
