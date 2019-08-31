@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Css link-->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    
+
+
     <title>Crystals Collector</title>
 </head>
 
 <body>
+    <!--JQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Create h1 tags-->
     <container>
         <h1>Crystals Collector</h1>
+
         <!--Create paragrapths-->
         <div class="partext">
             <p>You will be a random number at the start of the game.</p>
@@ -34,62 +38,62 @@
         </div>
         <!--ID where number goes-->
         <row>
-         <div>
-         <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+            <div>
+                <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+
+            </div>
+            <p>Wins:</p>
+                <div id="win">
+            </div>
+            <p>Lose:  <div id="lose">
+                </p> </div>
+        </row>
+        <div id="crystal">
+
+
 
         </div>
-            <div class="win">
-                <p>Wins:</p>
-            </div>
-            <div class="lose">
-                <p>Lose:</p>
-            </div>
-        </row>
-  <div id = "crystal">
-
-
-
-  </div>
         <!-- Create buttons -->
-         <div class="card-body"> 
-             <button id="random-button" class="btn btn-primary number"value="data-crystalvalue" ><img 
-                     src="assets/images/hao-zhang-5kHWjYZB45U-unsplash.jpg" width="100" height="100"></button> 
-           
-         <button id="random-button2" class="btn btn-primary number"value="data-crystalvalue"><img
+        <div class="card-body">
+            <button id="random-button" class="btn btn-primary number" value="data-crystalvalue"><img
+                    src="assets/images/hao-zhang-5kHWjYZB45U-unsplash.jpg" width="100" height="100"></button>
+
+            <button id="random-button2" class="btn btn-primary number" value="data-crystalvalue"><img
                     src="../Unit-4-Game/assets/images/grant-durr-j7WBHTOIyBA-unsplash.jpg" width="100"
                     height="100"></button>
-           
-         <button id="random-button3" class="btn btn-primary number"value="data-crystalvalue"><span><img
+
+            <button id="random-button3" class="btn btn-primary number" value="data-crystalvalue"><span><img
                         src="../Unit-4-Game/assets/images/jan-kopriva-dXj3wJbp_tA-unsplash.jpg" width="100"
                         height="100"></span></button>
-           
-        <button id="random-button4" class="btn btn-primary number"value="data-crystalvalue"><span><img
+
+            <button id="random-button4" class="btn btn-primary number" value="data-crystalvalue"><span><img
                         src="../Unit-4-Game/assets/images/denilo-vieira-4ioZ4zgslhg-unsplash.jpg" width="100"
                         height="100"></span></button>
         </div>
         <!--Create img-->
         <!--Wins lose tags-->
         <!--ID where number goes-->
-    
+
         <p>Your total score is:</p>
         <div id="score Keeper">
             <h1 class="text-center" id="random-number"></h1>
 
         </div>
-            <div>
-                <!-- Result Card -->
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-body">
-                            
-                            <h1 id="crystalNumber"></h1>
-                            <hr>
-                            <h1 id="result"></h1>
+        <div>
+            <!-- Result Card -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
 
-                        </div>
+                        <h1 id="crystalNumber"></h1>
+                        <hr>
+                        <h1 id="result"></h1>
+
                     </div>
+                    <button id = "button">Play Agin!</button>
                 </div>
             </div>
+        </div>
     </container>
     <script type="text/javascript" src="../Unit-4-Game/javascript/game.js"></script>
 </body>
